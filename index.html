@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            .abc td:nth-child(even) {text-align: right;}
+            /*.abc td:nth-child(odd) {background: #FFF}*/
+            body { font-family:'Calibri', sans sarif; font-size: 17px; }
+            td{ font-family:'Calibri'; text-align: left; font-size: 17px; vertical-align: middle;}
+            th{ text-align: left;font-size: 17px; }
+            .RobotTable td, .RobotTable th { padding: 0 5px; }
+        </style>
+    </head>
+    <body>
+      <div style=" width: 595px; height: 842px; background-color:white;">
+        <div  style="width: 23px;  height: 47px;  margin: 0 17px 54px 0; background-color: #f6faff; ">
+          <img src="./logo1.png" style="width: 87.3px; height: 41px;" />
+        </div>
+        <div  style=" width: 595px; height: 266px; margin: 20px 0 23px; padding: 23px 40px 23px 41px; background-color: #38404c;">
+          <div class="container-fluid">
+
+            <div class="row" style="color:white ;" >
+              <div>Personal information</div> </br>
+              <div>eConsultId: {{eConsultData[0].atlasID}}</div></br>
+              <div>Name: {{eConsultData[0].firstName}}  {{eConsultData[0].lastName}} </div></br>
+              <div>Age/Gender: {{eConsultData[0].gender}}</div></br>
+              <div>Diagnosis: {{eConsultData[0].diagnosis}}</div></br>
+              <div>History:
+                (Findings, Labs, etc) {{eConsultData[0].historyAndExam}}</div>
+            </div>
+        </div>
+      </div>
+      </div>
+      
+    </body>
+
+</html>

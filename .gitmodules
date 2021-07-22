@@ -1,0 +1,3 @@
+[submodule "library/lhtamqpclientlibrary"]
+	path = library/lhtamqpclientlibrary
+	url = https://atlas_leewayhertz:scarylime90@bitbucket.org/leewayhertz/lhtamqpclientlibrary
