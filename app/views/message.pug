@@ -1,0 +1,108 @@
+doctype html
+head
+    style.
+        .page-containter {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .main-page {
+            margin: auto;
+            border: 1px solid #f5f5f5;
+            display: flex;
+            width: 100%;
+            max-width: 550px;
+            background-color: white;
+        }
+
+        .sub-page {
+            margin-top: 45px;
+        }
+
+        .main-block {
+            width: 100%;
+            padding: 50px !important;
+        }
+
+        .logo-image {
+            text-align: left;
+        }
+
+        .upper-text {
+            height: 15px;
+            font-family: Arial;
+            font-size: 35px;
+            line-height: 1.21;
+            margin: auto;
+            padding-bottom: 15px;
+            color: #38404c;
+            font-weight: bold;
+        }
+
+        .url {
+            height: 15px;
+            font-family: Arial;
+            font-size: 14px;
+            margin: auto;
+            padding-bottom: 15px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .lower-Text {
+            height: 40px;
+            font-family: Arial;
+            font-size: 13px;
+            word-break: break-word;
+            margin: auto;
+            line-height: 1.5;
+            padding-top: 50px;
+            color: #000000;
+        }
+
+        .sub-block {
+            margin: auto;
+        }
+
+        .banner-img {
+            text-align: center;
+            margin-bottom: 4%;
+        }
+
+        .page-button {
+            width: 480px;
+            background-image: linear-gradient(to bottom, #326aea, #265cd8);
+            margin: auto;
+            border-radius: 4px;
+            text-align: center;
+            padding: 15px 0 15px 0;
+            margin-bottom: 15px !important;
+            margin-top: 30px !important;
+        }
+
+        .btn-text {
+            font-size: 16px;
+            color: white !important;
+            text-decoration: none;
+        }
+
+        .banner-inner-image {
+            width: 200px;
+            border-radius: 6px;
+            margin: auto;
+        }
+.page-containter
+    .main-page
+        .main-block
+            .logo-image
+                img(alt='logo' style='width:60px' src='https://atlas-clinic-dev.s3.amazonaws.com/AtlasLogo.png')
+            .sub-block
+                .sub-page
+                    p.upper-text #{TITLE}
+                    p.lower-Text #{BODY_TEXT}
+                    p.url
+                .banner-img
+                    img.banner-inner-image
