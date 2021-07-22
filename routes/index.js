@@ -6,7 +6,7 @@ import CategoryModule from "../app/modules/categories";
 
 
 module.exports = (app) => {
-    app.get('/', (req, res) => res.send(stringConstants.SERVICE_STATUS_HTML));
+    app.get('/', (req, res) => res.send("xinfin tangany service is working fine "));
 
     /**
      * route definition
