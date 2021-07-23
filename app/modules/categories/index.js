@@ -165,7 +165,7 @@ export default class Index {
     
     async walletBasedSmartContract(req, res) {
         let response = await new BLManager().walletBasedSmartContract(req.params).catch(err => {
-            console.log(response)
+            console.log(err,"err")
             return Utils.response(res, {err}, apiFailureMessage.INTERNAL_SERVER_ERROR, httpConstants.RESPONSE_STATUS.FAILURE, httpConstants.RESPONSE_CODES.SERVER_ERROR);
         });
         if (!response)

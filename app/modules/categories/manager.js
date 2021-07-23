@@ -275,10 +275,12 @@ export default class Manager {
     }
     walletBasedSmartContract = async (params) => {
         let contract="0xC32AE45504Ee9482db99CfA21066A59E877Bc0e6";
-        const url =`https://api.tangany.com/v1/eth/contract/` + `${contract}`+ `/` + `${params.wallet}` + `/call`;
+        let walletName= "my-wallet";
+        let method="balanceOf";
+        const url =`https://api.tangany.com/v1/eth/contract/` + `${contract}`+ `/` + `${walletName}` + `/call/` + `${method}`;
         // const url =`https://api.tangany.com/v1/eth/contract/` + `${params.contract}`+ `/` + `${params.wallet}` + `/call/` + `${params.wallet}`;
-        let body ={
-            "function": "getCount()",
+        let bodyy ={
+            "function": "getVaultsWithTime()",
             "inputs": [],
             "outputs": [
                 "address[]",
@@ -293,13 +295,13 @@ export default class Manager {
             "tangany-vault-url":"https://cw-keyv-demo-xinfins.vault.azure.net",
             "tangany-subscription":"7406fd8b6ca24eeda240a20a9b9a5a91",
         }
-        let rsponse = await HTTPService.executeHTTPRequest("POST", url, body, headers)
+        let rsponse = await HTTPService.executeHTTPRequest("GET", url, '', headers)
         return rsponse;
     }
     walletBasedSmartContractMethod = async (params) => {
         let contract="0xC32AE45504Ee9482db99CfA21066A59E877Bc0e6";
         let method="balanceOf"
-        const url =`https://api.tangany.com/v1/eth/contract/` + `${contract}`+ `/` + `${params.wallet}` + `/call/` + `${method}`;
+        const url =`https://api.tangany.com/v1/eth/contract/` + `${contract}`+ `/`  + `/call/` + `${method}`;
         // const url =`https://api.tangany.com/v1/eth/contract/` + `${params.contract}`+ `/` + `${params.wallet}` + `/call/` + `${params.wallet}`;
         
         const headers = {
