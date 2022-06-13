@@ -46,5 +46,5 @@ This folder is having different type of variable like DB url, PORT, microservice
 
 - development : Contain all variables which are used in development environment.
 - local : Contain all variables which are used for local system.
-- production : Contain all variables which are used - for production environment.
+- production : Contain all variables which are used for production environment.
 - test : Contain all variables which are used for testing purpose.
